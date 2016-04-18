@@ -1,0 +1,20 @@
+{
+  "name": "joomladay",
+  "version": "0.0.0",
+  "homepage": "https://github.com/thebeebs/joomladay",
+  "authors": [
+    "Martin Beeby <martinbeeby@hotmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.3",
+    "knockout": "~3.4.0"
+  }
+}

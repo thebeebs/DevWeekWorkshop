@@ -1,0 +1,143 @@
+ {
+  "months": [
+    {
+      "year": "2016",
+      "month": "Jan",
+      "sales": "6",
+      "": {}
+    },
+    {
+      "year": "2016",
+      "month": "Feb",
+      "sales": "5",
+      "": {}
+    },
+    {
+      "year": "2016",
+      "month": "Mar",
+      "sales": "4",
+      "": {}
+    },
+    {
+      "year": "2016",
+      "month": "Apr",
+      "sales": "5",
+      "": {}
+    },
+    {
+      "year": "2016",
+      "month": "May",
+      "sales": "6",
+      "": {}
+    },
+    {
+      "year": "2016",
+      "month": "June",
+      "sales": "5",
+      "": {}
+    },
+    {
+      "year": "2016",
+      "month": "July",
+      "sales": "5",
+      "": {}
+    },
+    {
+      "year": "2016",
+      "month": "Aug",
+      "sales": "6",
+      "": {}
+    },
+     {
+      "year": "2016",
+      "month": "Sep",
+      "sales": "5",
+      "": {}
+    },
+    {
+      "year": "2017",
+      "month": "Jan",
+      "sales": "7"
+    },
+    {
+      "year": "2017",
+      "month": "Feb",
+      "sales": "7"
+    },
+    {
+      "year": "2017",
+      "month": "Mar",
+      "sales": "7"
+    },
+    {
+      "year": "2017",
+      "month": "Apr",
+      "sales": "7"
+    },
+    {
+      "year": "2017",
+      "month": "May",
+      "sales": "7"
+    },
+    {
+      "year": "2018",
+      "month": "Jun",
+      "sales": "7"
+    },
+    {
+      "year": "2018",
+      "month": "Jul",
+      "sales": "6"
+    },
+    {
+      "year": "2018",
+      "month": "Aug",
+      "sales": "6"
+    },
+    {
+      "year": "2018",
+      "month": "Sep",
+      "sales": "7"
+    },
+    {
+      "year": "2019",
+      "month": "Jan",
+      "sales": "8"
+    },
+    {
+      "year": "2019",
+      "month": "Feb",
+      "sales": "6"
+    },
+    {
+      "year": "2019",
+      "month": "Mar",
+      "sales": "7"
+    },
+    {
+      "year": "2019",
+      "month": "May",
+      "sales": "5"
+    },{
+      "year": "2020",
+      "month": "June",
+      "sales": "10"
+    }
+    ,{
+      "year": "2020",
+      "month": "July",
+      "sales": "10"
+    },
+    {
+      "year": "2020",
+      "month": "Aug",
+      "sales": "12"
+    },
+    {
+      "year": "2020",
+      "month": "Sep",
+      "sales": "11"
+    }
+  ]
+}
+ 
