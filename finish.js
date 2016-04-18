@@ -14,7 +14,7 @@ class AppViewModel{
 }
 }
  
-$(() => ko.applyBindings(new AppViewModel));
+$(() => ko.applyBindings(new AppViewModel()));
 
 function getData(url, _this){
      fetch(url)
