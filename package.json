@@ -1,0 +1,25 @@
+{
+  "name": "DevWeek",
+  "version": "0.0.1",
+  "description": "DevWeek",
+  "main": "angular.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thebeebs/DevWeekWorkshop"
+  },
+  "keywords": [
+    "DevWeek"
+  ],
+  "author": "Martin Beeby <martinbeeby@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thebeebs/DevWeekWorkshop/issues"
+  },
+  "homepage": "https://github.com/thebeebs/DevWeekWorkshop",
+  "dependencies": {
+    "live-server": "0.8.2"
+  }
+}
