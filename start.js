@@ -23,19 +23,17 @@ ko.applyBindings(new AppViewModel())
 
 
 function getData(url, _this){
-var xmlhttp = new XMLHttpRequest();
-
- xmlhttp.onreadystatechange = function() {
-if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-    var json = JSON.parse(xmlhttp.responseText);
-    _this.monthsData(json.months);
-    _this.sum(sumData(json.months));
-    return json;
-    }
-};
-
-xmlhttp.open("GET", url, true);
-xmlhttp.send();
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        var json = JSON.parse(xmlhttp.responseText);
+        _this.monthsData(json.months);
+        _this.sum(sumData(json.months));
+        return json;
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
 }
 
 var config = [
