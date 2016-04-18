@@ -1,5 +1,6 @@
 "use strict"
-
+// Change to Class
+// Add Fat Arrows
 var AppViewModel = function () {
         
         var _this = this;
@@ -15,13 +16,12 @@ var AppViewModel = function () {
         }   
         ko.computed(function () {
             return _this.refreshData();
-        });     
-        
+        }); 
 };
 
 ko.applyBindings(new AppViewModel())  
 
-
+// Replace with fetch API
 function getData(url, _this){
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
@@ -40,7 +40,6 @@ var config = [
     "$",
     2    
 ];
-
 
 function sumData(json){
     var sum = 10;
