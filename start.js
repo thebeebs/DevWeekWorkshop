@@ -63,6 +63,6 @@ function sumData(json){
 // Make decimelPlaces default to 4
 // Accept rest params called ...extra
 function formatSum(symbol, decimelPlaces, sum){
-     return "Sum: " + symbol + " " + parseFloat(sum).toFixed(decimelPlaces);  
+     return "Sum: " + symbol + " " + parseFloat(sum).toFixed(decimelPlaces) + " in MM";  
 }
 

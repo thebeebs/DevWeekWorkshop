@@ -42,6 +42,6 @@ function sumData(json){
 }
 
 function formatSum(symbol, decimelPlaces = 4, sum, ...extra){
-     return `Sums: ${symbol} ${parseFloat(sum).toFixed(decimelPlaces)}`;  
+     return `Sum: ${symbol} ${parseFloat(sum).toFixed(decimelPlaces)} in MM`;  
 }
 
