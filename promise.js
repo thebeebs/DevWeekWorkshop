@@ -1,8 +1,16 @@
 'use strict';
-addElement("first")
-.then(x => {return addElement("second")})
-.then(x => { return addElement("third")})
-.then(x => { return addElement("fourth")})
+// addElement("first")
+// .then(x => {return addElement("second")})
+// .then(x => { return addElement("third")})
+// .then(x => { return addElement("fourth")})
+
+doThisStuff();
+ async function doThisStuff(){
+   await addElement("first");
+   await addElement("second");
+   await addElement("third");
+   await addElement("fourth");  
+}
 
 function addElement(elementText){
     var myPromise = new Promise(function(resolve,reject){
@@ -14,12 +22,4 @@ function addElement(elementText){
     }, Math.random() * 2000);
 });
 return myPromise;}
-// // document.body.appendChild(first);
-//
- // document.body.appendChild(second); 
-// doThisStuff()
-// async function doThisStuff(){
-//    await addElement(first);
-//    await addElement(second);
-//    await addElement(third);   
-// }
+
