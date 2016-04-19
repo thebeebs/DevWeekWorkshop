@@ -1,10 +1,10 @@
 #Installation
 Once you have cloned the run 
-    "Bower Install" 
+    *bower install*
 at cmd line. 
 
-Run "NPM install"
-Run "NPM Start" to start the application.
+Run *NPM install*
+Run *NPM start* to start the application.
 
 #1. Add a class with a constructor:
 
