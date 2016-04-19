@@ -161,3 +161,10 @@ Take additional parameters in a function as an array.
         }
         return `Sum: ${symbol} ${parseFloat(sum).toFixed(decimelPlaces)} in MM`;  
     }
+    
+#10. Promises
+
+    addElement("first")
+    .then(x => {return addElement("second")})
+    .then(x => { return addElement("third")})
+    .then(x => { return addElement("fourth")})
