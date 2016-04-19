@@ -1,8 +1,8 @@
 "use strict"
 // Change to Class
 // Add Fat Arrows
-var AppViewModel = function () {
-        
+
+var AppViewModel = function () {        
         var _this = this;
         this.chosenSector = ko.observable("martinb");
         this.monthsData = ko.observableArray();
