@@ -1,6 +1,5 @@
 class AppViewModel{
-    constructor(){  
-          
+    constructor(){          
         this.chosenSector = ko.observable("martinb");
         this.monthsData = ko.observableArray();
         this.sum = ko.observableArray();
@@ -11,12 +10,15 @@ class AppViewModel{
         var sector = this.chosenSector();
         var url = `${loc}${sector}.json`;
         getData(url, this);        
-}
+    }
 }
  
 $(() => ko.applyBindings(new AppViewModel()));
 
 function getData(url, _this){
+    if (typeof fetch == 'undefined'){
+        return getDataOld(url, _this);
+    }
      fetch(url)
         .then(response => response.json())
         .then(json => {
@@ -42,6 +44,22 @@ function sumData(json){
 }
 
 function formatSum(symbol, decimelPlaces = 4, sum, ...extra){
-     return `Sum: ${symbol} ${parseFloat(sum).toFixed(decimelPlaces)} in MM`;  
+    for (let value of extra){
+        sum = sum + value;
+    }
+    return `Sum: ${symbol} ${parseFloat(sum).toFixed(decimelPlaces)} in MM`;  
 }
 
+function getDataOld(url, _this){
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        var json = JSON.parse(xmlhttp.responseText);
+        _this.monthsData(json.months);
+        _this.sum(sumData(json.months));
+        return json;
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+}

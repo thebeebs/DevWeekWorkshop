@@ -11,6 +11,7 @@ var AppViewModel = function () {
             var _this2 = this;
             var sector = this.chosenSector();
             // Add Const
+            // Template string
             var url = "backend/sales-" + sector + ".json";            
             getData(url,_this2);      
         }   
