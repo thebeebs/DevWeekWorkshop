@@ -1,4 +1,4 @@
-#Installation
+# Installation
 Once you have cloned the run 
     *bower install*
 at cmd line. 
@@ -6,7 +6,7 @@ at cmd line.
 Run *NPM install*
 Run *NPM start* to start the application.
 
-#1. Add a class with a constructor:
+## 1. Add a class with a constructor:
 
         class AppViewModel{
             constructor(){  
@@ -26,7 +26,7 @@ Run *NPM start* to start the application.
         
         $(() => ko.applyBindings(new AppViewModel()));
      
-#2. Arrow Functions and using 'this'
+## 2. Arrow Functions and using 'this'
 How 'this' works in JavaScript functions is a common prblem for  in programmers 
 coming to JavaScript. Indeed, learning how to use it is something of a rite 
 of passage as developers become more accustomed to working in JavaScript.
@@ -83,7 +83,7 @@ Here, there is no dynamic binding for 'this' other than Window.
         
        
        
-#3. Const
+## 3. Const
  
  This new keyword alows you to create a constant which could be used in place of a
  variable if you have a value that shouldn't change during the lifecycle of the application.
@@ -91,7 +91,7 @@ Here, there is no dynamic binding for 'this' other than Window.
     const loc = "backend/sales-";
     var url = loc + sector + ".json";
 
-#4. Template Strings
+## 4. Template Strings
 
 Traditionally in JavaScript we would join strings and variable together using +. 
 Whilst this works it can be messy when you are working with lots of variables.
@@ -114,7 +114,7 @@ line will actually be interpreted.
               span multiple lines`; // This is valid
     console.log(toLog)
 
-#5. Let
+## 5. Let
  
  This new keyword alows you to create a 
  variable which is only avalible in it's current scope.
@@ -125,20 +125,20 @@ line will actually be interpreted.
     
     alert(i) // i Will be undefined
 
-#6. For In Loop
+## 6. For In Loop
 
     for (let item of json )
     {
         sum = sum + parseInt(item.sales);
     }
     
-#7. Default Parameters
+## 7. Default Parameters
 
     function formatSum(symbol, decimelPlaces = 5, sum){
 
     return formatSum("£", undefined , sum);
 
-#8. Spread
+## 8. Spread
 
 Spread out the values in the config array as parameters for the formatSum function
 
@@ -149,7 +149,7 @@ Spread out the values in the config array as parameters for the formatSum functi
     
     return formatSum(...config , sum);
     
-#9. Rest
+## 9. Rest
 
 Take additional parameters in a function as an array.
 
@@ -162,7 +162,7 @@ Take additional parameters in a function as an array.
         return `Sum: ${symbol} ${parseFloat(sum).toFixed(decimelPlaces)} in MM`;  
     }
     
-#10. Promises
+## 10. Promises
 
     addElement("first")
     .then(x => {return addElement("second")})
